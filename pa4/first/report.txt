@@ -1,0 +1,5 @@
+The main data structures that I used in my project were 1D and 2D arrays. 
+
+I created a build cache method where I input the size of the rows and the size of the columns. With a for loop, I malloc memory for each row by the size of unsigned long long int pointer multiplied by number of columns. This method builds caches for direct, n-way associative, and fully associative.
+
+Prefetch is an approach based on the principle of locality for cache. When you miss on a read or write, chances are you are also going to need the memory that is next to the memory you are currently looking for.When you miss on that current memory, you insert this memory in the cache as well as the memory that is adjacent (Address+ blockSize). When using prefetch, the number of hits and reads increment and the number of.This makes sense because you are putting the next memory address in the cache right after you put the memory address you missed on. Because more things are being put into the cache on a miss, this means that a miss will be less likely in the future. Reads increment because when you get a write hit, you increment number of reads as well as number of hits.  
